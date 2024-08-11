@@ -1,0 +1,85 @@
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up the body for full-screen center alignment */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e4e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Styling the main container */
+#main {
+    width: 100%;
+    max-width: 400px;
+    background-color: #283593; /* Dark Indigo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+}
+
+/* Styling labels and input fields */
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3949ab; /* Lighter Indigo */
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the button */
+button {
+    background-color: #ffb74d; /* Warm Yellow */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ffa726; /* Slightly darker Warm Yellow */
+}
+
+/* Styling the paragraph that displays the total bill */
+p {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (min-width: 600px) {
+    #main {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    #main {
+        max-width: 600px;
+    }
+}
